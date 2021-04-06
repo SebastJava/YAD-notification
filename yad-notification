@@ -1,0 +1,16 @@
+#!/bin/bash
+
+mkdir -p $HOME/.var; rm -f $HOME/.var/yad-toggle
+PIPE=$HOME/.var/yad-pipe; rm -f $PIPE
+# Create a FIFO file, used to manage the I/O redirection from shell
+mkfifo $PIPE
+# Attach a file descriptor to the file
+exec 3<> $PIPE
+
+# Create the notification icon (default icon-size=16)
+yad --notification --listen --no-middle         \
+    --image="/usr/share/icons/yad-icon-off.svg" \
+    --icon-size=24 --text="Toggle ON/OFF"       \
+    --command="/usr/local/bin/yad-toggle" <&3
+
+# If you need to QUIT, open your Terminal and type: echo "quit" > $HOME/.var/yad-pipe

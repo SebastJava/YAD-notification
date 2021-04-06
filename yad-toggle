@@ -1,0 +1,11 @@
+#!/bin/bash
+
+TOGGLE=$HOME/.var/yad-toggle
+
+if [ ! -e $TOGGLE ]; then
+    touch $TOGGLE
+    echo "icon:/usr/share/icons/yad-icon-on.svg" > $HOME/.var/yad-pipe
+else
+    rm $TOGGLE
+    echo "icon:/usr/share/icons/yad-icon-off.svg" > $HOME/.var/yad-pipe
+fi
