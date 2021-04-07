@@ -1,6 +1,6 @@
 ![YAD-notification-on preview](YAD-notification-on.png)
 ![YAD-notification-off preview](YAD-notification-off.png)
-# YAD-notification
+# YAD-notification for LinuxMint and Ubuntu
 A mini repository showing an example of a YAD notification.
 
 Based on https://sourceforge.net/p/yad-dialog/wiki/NotificationIcon/
@@ -27,7 +27,10 @@ Please take note that if you only need some tray icon to toggle ON/OFF and send 
 ## Automatic Installation
 * Make sure **INSTALL.sh** is allowed to execute as program: Properties > Permissions > Allow executing file as program. Or open your terminal in this YAD-notification directory and type `chmod a+x INSTALL.sh`.
 * Double-click on INSTALL.sh to **Run in Terminal**.
-* Go to Menu > Search > **Startup Applications**. Click on [+] or [Add] to add your custom command. Name: YAD-notification Command: yad-notification Comment: Toggle to test YAD notification area.
+* Go to Menu > Search > **Startup Applications**. Click on [+] or [Add] to add your custom command.
+  * Name: YAD-notification
+  * Command: yad-notification
+  * Comment: Toggle to test YAD notification area.
 * Your new tray icon should appear on your next login.
 
 ## Manual Installation

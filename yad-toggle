@@ -5,7 +5,9 @@ TOGGLE=$HOME/.var/yad-toggle
 if [ ! -e $TOGGLE ]; then
     touch $TOGGLE
     echo "icon:/usr/share/icons/yad-icon-on.svg" > $HOME/.var/yad-pipe
+    # Add your "ON" commands here
 else
     rm $TOGGLE
     echo "icon:/usr/share/icons/yad-icon-off.svg" > $HOME/.var/yad-pipe
+    # Add your "OFF" commands here
 fi
