@@ -20,7 +20,7 @@ Please take note that if you only need some tray icon to toggle ON/OFF and send 
 ...And you can replace my generic icons with your icons in both scripts. But please take note that on MATE i found you must use some /path/to/icon, not just the icon name.
 
 ## Prerequisites
-* Install **YAD** from your Software Manager, or Synaptic, or from your terminal with this command: `sudo apt install yad`.
+* Install **YAD** from your Software Manager, or Synaptic, or from your terminal with these commands: `apt update` and then `apt install yad`.
 * [Download ZIP here](https://github.com/SebastJava/yad-notification/archive/main.zip) (OR click on top-right green button "Code" and then click on **Download ZIP**.)
 * **Extract** this zip (unzip).
 
