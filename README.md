@@ -20,13 +20,14 @@ Please take note that if you only need some tray icon to toggle ON/OFF and send 
 ...And you can replace my generic icons with your icons in both scripts. But please take note that on MATE i found you must use some /path/to/icon, not just the icon name.
 
 ## Prerequisites
-* Install **YAD** from your Software Manager, or Synaptic, or from your terminal with these commands: `apt update` and then `apt install yad`.
+* Install **YAD** from your Software Manager, or Synaptic, or from your terminal with these commands: `apt update` and then `apt install yad`
 * [Download ZIP here](https://github.com/SebastJava/yad-notification/archive/main.zip) (OR click on top-right green button "Code" and then click on **Download ZIP**.)
 * **Extract** this zip (unzip).
 
 ## Automatic Installation
-* Make sure **INSTALL.sh** is allowed to execute as program: Properties > Permissions > Allow executing file as program. Or open your terminal in this YAD-notification directory and type `chmod a+x INSTALL.sh`.
-* Double-click on INSTALL.sh to **Run in Terminal**.
+* Make sure **INSTALL.sh** is allowed to execute as program: Properties > Permissions > **Allow executing file as program.** OR type `chmod a+x PATH/TO/THIS/DIRECTORY/INSTALL.sh` in the terminal.
+* Open your terminal into this new directory: `cd PATH/TO/THIS/YAD-notification-main`
+* In your terminal, type `./INSTALL.sh` and press Enter.
 * Go to Menu > Search > **Startup Applications**. Click on [+] or [Add] to add your custom command.
   * Name: YAD-notification
   * Command: yad-notification
@@ -34,10 +35,10 @@ Please take note that if you only need some tray icon to toggle ON/OFF and send 
 * Your new tray icon should appear on your next login.
 
 ## Manual Installation
-* Copy **yad-notification** and **yad-toggle** into /usr/local/bin using your GUI or open your terminal into your downloaded and extracted directory and type: `sudo cp -f yad-notification yad-toggle /usr/local/bin`.
-* Make sure **both scripts are executable**: File Properties > Permissions > Allow executing... Or type `sudo chmod a+x /usr/local/bin/yad-notification /usr/local/bin/yad-toggle`.
-* Copy **yad-icon-off.svg** and **yad-icon-on.svg** into /usr/share/icons using your GUI or open your terminal into your downloaded and extracted directory and type: `sudo cp -f yad-icon-on.svg yad-icon-off.svg /usr/share/icons`.
-* **Test it !** Open your terminal and type `yad-notification`. 
+* Copy **yad-notification** and **yad-toggle** into `/usr/local/bin` using your GUI or open your terminal into your downloaded and extracted directory and type: `sudo cp -f yad-notification yad-toggle /usr/local/bin`
+* Make sure **both scripts are executable**: File Properties > Permissions > **Allow executing file as program.** OR type `sudo chmod a+x /usr/local/bin/yad-notification /usr/local/bin/yad-toggle` in the terminal.
+* Copy **yad-icon-off.svg** and **yad-icon-on.svg** into `/usr/share/icons` using your GUI or open your terminal into your downloaded and extracted directory and type: `sudo cp -f yad-icon-on.svg yad-icon-off.svg /usr/share/icons`
+* **Test it !** Open your terminal and type `yad-notification`
 * Go to Menu > Search > **Startup Applications**. Click on [+] or [Add] to add your custom command.
   * Name: YAD-notification
   * Command: yad-notification
