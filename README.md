@@ -25,8 +25,8 @@ Please take note that if you only need some tray icon to toggle ON/OFF and send 
 * **Extract** this zip (unzip).
 
 ## Automatic Installation
-* Make sure **INSTALL.sh** is allowed to execute as program: Properties > Permissions > **Allow executing file as program.** OR type `chmod a+x PATH/TO/THIS/DIRECTORY/INSTALL.sh` in the terminal.
-* Open your terminal into this new directory: `cd PATH/TO/THIS/YAD-notification-main`
+* Make sure **INSTALL.sh** is allowed to execute as program: Properties > Permissions > **Allow executing file as program.** OR type `chmod a+x /PATH/TO/THIS/DIRECTORY/INSTALL.sh` in the terminal.
+* Open your terminal into this new directory: `cd /PATH/TO/THIS/YAD-notification-main`
 * In your terminal, type `./INSTALL.sh` and press Enter.
 * Go to Menu > Search > **Startup Applications**. Click on [+] or [Add] to add your custom command.
   * Name: YAD-notification
